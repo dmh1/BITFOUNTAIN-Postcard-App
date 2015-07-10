@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         messageLabel.textColor = UIColor.redColor()
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
+        
         enterNameTextField.hidden = true
         nameLabel.hidden = false
         nameLabel.text = enterNameTextField.text
