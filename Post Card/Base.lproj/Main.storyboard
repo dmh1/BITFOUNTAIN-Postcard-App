@@ -77,7 +77,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="42" y="72" width="304" height="57"/>
+                                    <rect key="frame" x="54" y="72" width="292" height="57"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7n-7y-kmS">
@@ -93,6 +93,28 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63H-EF-TwH"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpS-mM-yEh" userLabel="Name Label">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="54" y="145" width="204" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b2-Er-3am">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57891432570000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Undo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="54" y="316" width="204" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="undoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OVR-1w-h89"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -101,6 +123,8 @@
                                 <exclude reference="C36-C9-d3a"/>
                                 <exclude reference="7e1-rl-KyB"/>
                                 <exclude reference="U7n-7y-kmS"/>
+                                <exclude reference="FpS-mM-yEh"/>
+                                <exclude reference="2b2-Er-3am"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -109,6 +133,8 @@
                                 <include reference="C36-C9-d3a"/>
                                 <include reference="7e1-rl-KyB"/>
                                 <include reference="U7n-7y-kmS"/>
+                                <include reference="FpS-mM-yEh"/>
+                                <include reference="2b2-Er-3am"/>
                             </mask>
                         </variation>
                     </view>
@@ -116,7 +142,9 @@
                         <outlet property="enterMessageTextField" destination="C36-C9-d3a" id="rYi-t8-aEh"/>
                         <outlet property="enterNameTextField" destination="lKj-G3-Rca" id="Iit-Vh-9Wd"/>
                         <outlet property="mailButton" destination="U7n-7y-kmS" id="XCE-rz-I6a"/>
-                        <outlet property="messageLabel" destination="7e1-rl-KyB" id="EMa-hR-Iyd"/>
+                        <outlet property="messageLabel" destination="7e1-rl-KyB" id="7wO-oS-FTL"/>
+                        <outlet property="nameLabel" destination="FpS-mM-yEh" id="mT3-sq-V5R"/>
+                        <outlet property="undoButton" destination="2b2-Er-3am" id="yyO-J3-YAO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
